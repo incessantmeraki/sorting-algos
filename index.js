@@ -92,3 +92,47 @@ exports.mergeSort = function (arr) {
     return result.concat(node1.length ? node1 : node2)
   }
 }
+
+exports.quickSort = function (arr) {
+  return qSort(arr, 0, arr.length - 1)
+
+  function qSort(items, left, right) {
+    var index 
+    
+    if (items.length > 1) {
+      index = partition (items, left, right)
+
+      if (left < index - 1) 
+        qSort(items, left, index - 1)
+
+      if (index < right) 
+        qSort(items, index, right)
+      
+    }
+    return items
+  }
+
+  function partition(items, left, right) {
+    var pivot, i , j
+    pivot = items[Math.floor((right+left)/2)]
+    i = left
+    j = right
+
+    while (i <= j) {
+      while (items[i] < pivot) 
+        i++
+
+      while (items[j] > pivot)
+        j--
+
+      if (i <= j) {
+        let tmp = items[i]
+        items[i] = items[j]
+        items[j] = tmp
+        i++
+        j--
+      }
+    }
+    return i
+  }
+}
