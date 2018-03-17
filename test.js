@@ -4,6 +4,7 @@ var {selectionSort} = require('./index.js')
 var {insertionSort} = require('./index.js')
 var {heapSort} = require('./index.js')
 var {mergeSort} = require('./index.js')
+var {quickSort} = require('./index.js')
 
 function isSorted (arr) {
   for (let i = 0; i < arr.length - 1; i++) {
@@ -58,6 +59,14 @@ test('test merge sort', function (t) {
   for (let i = 10; i < 1000; i = i + 10) {
     let testData = createRandomList(i)
     t.ok(isSorted(mergeSort(testData)))
+  }
+  t.end()
+})
+
+test('test quick sort', function (t) {
+  for (let i = 10; i < 1000; i = i + 10) {
+    let testData = createRandomList(i)
+    t.ok(isSorted(quickSort(testData)))
   }
   t.end()
 })
