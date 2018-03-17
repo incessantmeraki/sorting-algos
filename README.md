@@ -1,8 +1,8 @@
 # sorting-algos
 
-[![Build Status](https://travis-ci.org/incessantmeraki/sorting-algos.svg?branch=master)](https://travis-ci.org/incessantmeraki/sorting-algos)
-
 implementation of various sorting algorithms in javascript
+
+[![Build Status](https://travis-ci.org/incessantmeraki/sorting-algos.svg?branch=master)](https://travis-ci.org/incessantmeraki/sorting-algos)
 
 ## Usage
 

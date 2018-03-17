@@ -1,7 +1,7 @@
 {
   "name": "sorting-algos",
-  "version": "1.0.0",
-  "description": "[![Build Status](https://travis-ci.org/incessantmeraki/sorting-algos.svg?branch=master)](https://travis-ci.org/incessantmeraki/sorting-algos)",
+  "version": "1.0.2",
+  "description": "implementation of various sorting algorithms for in javascript for node.js and browsers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
