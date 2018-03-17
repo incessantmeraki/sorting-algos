@@ -12,6 +12,18 @@ exports.bubbleSort = function(arr) {
   return arr
 }
 
-exports.b = function() {
-  console.log('This is b')
+exports.selectionSort = function(arr) {
+  var len = arr.length
+  for (let i = 0; i < len - 1; i++) {
+    minIndex = i
+    for (let j = i+1; j < len; j++) {
+      if (arr[j] < arr[minIndex]) 
+        minIndex = j
+    }
+
+    let tmp  = arr[i]
+    arr[i] = arr[minIndex]
+    arr[minIndex] = tmp
+  }
+  return arr
 }
