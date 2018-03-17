@@ -1,18 +1,15 @@
 {
   "name": "sorting-algos",
-  "version": "1.0.2",
-  "description": "implementation of various sorting algorithms for in javascript for node.js and browsers",
+  "version": "1.0.3",
+  "description": "implementation of various sorting algorithms for browsers and node.js",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ashwin Kandel",
-  "license": "MIT",
   "dependencies": {
-    "priority-queues": "^1.0.0"
-  },
-  "devDependencies": {
+    "priority-queues": "^1.0.0",
     "tape": "^4.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +18,11 @@
   "keywords": [
     "sorting",
     "algorithms",
-    "javascript",
-    "node.js"
+    "node.js",
+    "browsers"
   ],
+  "author": "incessantmeraki",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/incessantmeraki/sorting-algos/issues"
   },
