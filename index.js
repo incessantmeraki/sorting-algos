@@ -9,6 +9,7 @@ exports.bubbleSort = function(arr) {
       }
     }
   }
+
   return arr
 }
 
@@ -25,5 +26,28 @@ exports.selectionSort = function(arr) {
     arr[i] = arr[minIndex]
     arr[minIndex] = tmp
   }
+
+  return arr
+}
+
+exports.insertionSort = function(arr) {
+  var len = arr.length
+
+  var minIndex = 0
+  for (let i = 0; i < len; i++) {
+    if (arr[i] < arr[minIndex])
+      minIndex = i
+  }
+  var tmp = arr[0]
+  arr[0] = arr[minIndex]
+  arr[minIndex] = tmp
+
+  for (let i = 1; i < len; i++) {
+    let tmp = arr[i]
+    for (j = i; tmp < arr[j-1]; j--) 
+      arr[j] = arr[j-1]
+    arr[j] = tmp
+  }
+
   return arr
 }
