@@ -43,3 +43,11 @@ test('test insertion sort', function (t) {
   }
   t.end()
 })
+
+test('test insertion sort', function (t) {
+  for (let i = 10; i < 1000; i = i + 10) {
+    let testData = createRandomList(i)
+    t.ok(isSorted(insertionSort(testData)))
+  }
+  t.end()
+})
