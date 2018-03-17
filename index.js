@@ -1,3 +1,5 @@
+var PQueue = require('priority-queues')
+
 exports.bubbleSort = function(arr) {
   var len = arr.length
   for (let i=0; i<len-1; i++) {
@@ -49,5 +51,18 @@ exports.insertionSort = function(arr) {
     arr[j] = tmp
   }
 
+  return arr
+}
+
+exports.heapSort = function (arr) {
+  heap = new PQueue()
+  for (let i = 0; i < arr.length; i++) {
+    heap.push(arr[i])
+  }
+
+  for (let j = 0; i < arr.length; j++) {
+    arr[i] = heap.pop()
+  }
+  
   return arr
 }
