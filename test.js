@@ -1,6 +1,7 @@
 var test = require('tape')
 var {bubbleSort} = require('./index.js')
 var {selectionSort} = require('./index.js')
+var {insertionSort} = require('./index.js')
 
 function isSorted (arr) {
   for (let i = 0; i < arr.length - 1; i++) {
@@ -31,6 +32,14 @@ test('test selection sort', function (t) {
   for (let i = 10; i < 1000; i = i + 10) {
     let testData = createRandomList(i)
     t.ok(isSorted(selectionSort(testData)))
+  }
+  t.end()
+})
+
+test('test insertion sort', function (t) {
+  for (let i = 10; i < 1000; i = i + 10) {
+    let testData = createRandomList(i)
+    t.ok(isSorted(insertionSort(testData)))
   }
   t.end()
 })
