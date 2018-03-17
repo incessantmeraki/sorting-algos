@@ -3,6 +3,7 @@ var {bubbleSort} = require('./index.js')
 var {selectionSort} = require('./index.js')
 var {insertionSort} = require('./index.js')
 var {heapSort} = require('./index.js')
+var {mergeSort} = require('./index.js')
 
 function isSorted (arr) {
   for (let i = 0; i < arr.length - 1; i++) {
@@ -49,6 +50,14 @@ test('test heap sort', function (t) {
   for (let i = 10; i < 1000; i = i + 10) {
     let testData = createRandomList(i)
     t.ok(isSorted(heapSort(testData)))
+  }
+  t.end()
+})
+
+test('test merge sort', function (t) {
+  for (let i = 10; i < 1000; i = i + 10) {
+    let testData = createRandomList(i)
+    t.ok(isSorted(mergeSort(testData)))
   }
   t.end()
 })
