@@ -1,0 +1,31 @@
+{
+  "name": "sorting-algos",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/incessantmeraki/sorting-algos.svg?branch=master)](https://travis-ci.org/incessantmeraki/sorting-algos)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashwin Kandel",
+  "license": "MIT",
+  "dependencies": {
+    "priority-queues": "^1.0.0"
+  },
+  "devDependencies": {
+    "tape": "^4.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incessantmeraki/sorting-algos.git"
+  },
+  "keywords": [
+    "sorting",
+    "algorithms",
+    "javascript",
+    "node.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/incessantmeraki/sorting-algos/issues"
+  },
+  "homepage": "https://github.com/incessantmeraki/sorting-algos#readme"
+}
