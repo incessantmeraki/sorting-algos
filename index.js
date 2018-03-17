@@ -60,8 +60,8 @@ exports.heapSort = function (arr) {
     heap.push(arr[i])
   }
 
-  for (let j = 0; i < arr.length; j++) {
-    arr[i] = heap.pop()
+  for (let j = 0; j < arr.length; j++) {
+    arr[j] = heap.pop()
   }
   
   return arr
